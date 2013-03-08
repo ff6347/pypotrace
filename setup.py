@@ -3,11 +3,12 @@
 from distutils.core import setup
 from distutils.extension import Extension
 from Cython.Distutils import build_ext
+import numpy
 
 
 ext_modules = [
         Extension("potrace._potrace", ["potrace/_potrace.pyx"], 
-            libraries=["potrace"]),
+            libraries=["potrace"], include_dirs=['/opt/local/include',numpy.get_include()]),
         Extension("potrace.bezier", ["potrace/bezier.pyx"],
             libraries=["agg"], language="c++"),
         Extension("potrace.agg.curves", ["potrace/agg/curves.pyx"],
