@@ -36,21 +36,22 @@ The bindings work with input images represented as numpy arrays::
 Installation
 ------------
 
-Ubuntu:  
+Ubuntu:
+
 Make sure you have the agg and potrace development packages installed
 (libagg-dev and libpotrace-dev on ubuntu) and run::
 
     python setup.py install
 
-MacOSX:  
+MacOSX:
 
-download and install cython from http://www.cython.org/  
+download and install cython from http://www.cython.org/
 
-install agg  
+install agg:
 
     sudo port install antigraingeometry
 
-install potrace  
+install potrace:
 
     sudo port install potrace
 
