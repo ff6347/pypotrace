@@ -43,7 +43,7 @@ Make sure you have the agg and potrace development packages installed
 
     python setup.py install
 
-MacOSX:
+MacOSX (not working right now! see https://github.com/flupke/pypotrace/issues/3 ):
 
 download and install cython from http://www.cython.org/
 
